@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <title>Personal Portfolio: My Skills</title>
+</head>
+<body>
+    <header class="header">
+
+        <input type="checkbox" id="check">
+        <a href="portfolio.html" class="logo">Lou.</a>
+        
+        <nav class="navbar">
+            <div class="navbar_box"><a href="portfolio.html">Home</a></div>
+            <div class="navbar_box"><a href="about_me.html">About Me</a></div>
+            <div class="navbar_box"><a href="works.html">My Work</a></div>
+            <div class="navbar_box"><a href="skills.html">My Skills</a></div>
+            <div class="navbar_box"><a href="contact_us.html">Contact Me</a></div>
+        </nav>
+
+        <nav class="icons">
+            <div class="icons_box"><a href="https://hk.linkedin.com/" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="icons_box"><a href="https://x.com/" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a></div>    
+            <div class="icons_box"><a href="" target="_blank" title="FaceBook"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="icons_box"><a href="https://login.yahoo.com/" target="_blank" title="Yahoo"><i class="fa-solid fa-envelope"></i></a></div>   
+        </nav>
+
+        
+        <label for="check" class="label_icons">
+            <i class="fa-solid fa-list" id="list"></i>
+            <i class="fa-solid fa-x" id="close"></i>
+        </label>
+
+    </header>
+    
+
+    <section class="skills">
+
+        <div class="skills_video">
+            <div class="row list1">
+                <div class="col">
+                    <div class="_img">
+                        <img src="image/as.png" width="100%" alt="">
+                        <img src="image/play_btn.webp" class="play_btn"
+                        onclick="playVideo('https://video.wixstatic.com/video/eae431_38dd60ca871a44d897c4b3f524ab87e7/1080p/mp4/file.mp4')" >
+                    </div>
+                </div>
+            </div>
+            <div class="row list2">
+                <div class="col">
+                    <div class="_img">
+                        <img src="image/ps.png" width="100%" alt="">
+                        <img src="image/play_btn.webp" class="play_btn"
+                        onclick="playVideo('https://video.wixstatic.com/video/eae431_159f4213cd3d414ca66e0282f512d23d/1080p/mp4/file.mp4')" >
+                    </div>
+                </div>
+            </div>
+            <div class="row list3">
+                <div class="col">
+                    <div class="_img">
+                        <img src="image/work.webp" width="100%" alt="">
+                        <img src="image/play_btn.webp" class="play_btn"
+                        onclick="playVideo('https://video.wixstatic.com/video/eae431_22d04c6c183b437cb278ec35ff697ec7/1080p/mp4/file.mp4')" >
+                    </div>
+                </div>
+            </div>
+            <div class="row list4">
+                <div class="col">
+                    <div class="_img">
+                        <img src="image/web.png" width="100%" alt="">
+                        <img src="image/play_btn.webp" class="play_btn"
+                        onclick="playVideo('https://video.wixstatic.com/video/eae431_22d04c6c183b437cb278ec35ff697ec7/1080p/mp4/file.mp4')" >
+                    </div>
+                </div>
+            </div>
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="video_player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="https://video.wixstatic.com/video/eae431_38dd60ca871a44d897c4b3f524ab87e7/1080p/mp4/file.mp4" type="video/mp4">
+                </video>
+                <img src="image/close.png" class="close" onclick="stopVideo()" >
+            </div>
+
+            <div class="video_player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="https://video.wixstatic.com/video/eae431_159f4213cd3d414ca66e0282f512d23d/1080p/mp4/file.mp4" type="video/mp4">
+                </video>
+                <img src="image/close.png" class="close" onclick="stopVideo()" >
+            </div>
+
+            <div class="video_player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="https://video.wixstatic.com/video/eae431_22d04c6c183b437cb278ec35ff697ec7/1080p/mp4/file.mp4" type="video/mp4">
+                </video>
+                <img src="image/close.png" class="close" onclick="stopVideo()" >
+            </div>
+
+            <div class="video_player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="https://video.wixstatic.com/video/eae431_22d04c6c183b437cb278ec35ff697ec7/1080p/mp4/file.mp4" type="video/mp4">
+                </video>
+                <img src="image/close.png" class="close" onclick="stopVideo()" >
+            </div>
+
+
+
+        </div>
+
+
+        <div class="skills_box1">
+            <div class="item_1 item1"><p>Putonghua(Fluent)</p></div>
+            <div class="item_1 item2"><p>English(Basic)</p></div>
+            <div class="item_1 item3"><p><span>Language :</span></p></div>
+            <div class="item_1 item4"><p>Cantonese(Fluent)</p></div>
+        </div>
+
+        <div class="skills_box2">
+            <div class="item_2 item1_"><p>PhotoShop</p></div>
+            <div class="item_2 item2_"><p><span>Computer :</span></p></div>
+            <div class="item_2 item3_"><p>JAVA+PHP</p></div>
+            <div class="item_2 item4_"><p>HTML+CSS+JS</p></div>
+            <div class="item_2 item5_"><p>Android Studio</p></div>
+            <div class="item_2 item6_"><p>MySQL+MS Office</p></div>
+        </div>
+        
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
